@@ -14,6 +14,5 @@ namespace SqlFramework
         public int PageSize { get; set; }
 
         public List<string> Include { get; set; }
-
     }
 }
