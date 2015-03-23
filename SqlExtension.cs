@@ -67,7 +67,7 @@ namespace SqlFramework
             return dt != null && dt.Rows.Count > 0 ? dt.AutoMapp<T>() : null;
         }
         /// <summary>
-        /// 查询指定字段的数据
+        /// 查询指定字段的数据 
         /// </summary>
         /// <typeparam name="T">字段实体</typeparam>
         /// <typeparam name="TResult">映射到的实体类</typeparam>
