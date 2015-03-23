@@ -12,7 +12,6 @@ namespace SqlFramework
     {
         static readonly SqlConnection Cn = new SqlConnection();
         static readonly SqlCommand Cmd = new SqlCommand();
-
         public static string ConnectionString { get; set; }
 
         public SqlCore(string connectionName)
