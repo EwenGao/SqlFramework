@@ -56,6 +56,8 @@ namespace SqlFramework
             copy.DestinationTableName = tableName;
             copy.BatchSize = dt.Rows.Count;
             copy.WriteToServer(dt);
+            Cn.Close();
+            copy.Close();
         }
 
         public static object ExecuteScalar(string sql)
