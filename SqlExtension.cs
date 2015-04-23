@@ -134,6 +134,22 @@ namespace SqlFramework
             var dt = SqlCore.SqlSelect(sql.ToString());
             return dt != null ? dt.AutoMapp<TResult>() : null;
         }
+         /// <summary>
+        /// 查询总的数据条数
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static int Count<T>(this SqlQueryable<T> source)
+        {
+            var t = typeof(T);
+            var sql = new StringBuilder();
+            sql.Append("select count(0) from " + t.Name);
+            sql.Append(source.Where ?? "");
+            return (int)SqlCore.ExecuteScalar(sql.ToString());
+
+        }
+
         /// <summary>
         /// 返回集合数据的第一条数据，没有数据返回null
         /// </summary>
@@ -144,7 +160,7 @@ namespace SqlFramework
         {
             source.PageSize = 1;
             var items = source.ToEnumerable().ToArray();
-            return items.Any() ? items.FirstOrDefault() : default(T);
+            return  items.FirstOrDefault();
         }
         /// <summary>
         /// 返回符合条件的第一条数据，没有数据返回null
