@@ -1,0 +1,5 @@
+E:\SqlFramework\SqlEnitityFramerwork\SqlEnitityFramerwork.Core\obj\Debug\SqlEnitityFramerwork.Core.csprojResolveAssemblyReference.cache
+E:\SqlFramework\SqlEnitityFramerwork\SqlEnitityFramerwork.Core\bin\Debug\SqlEnitityFramerwork.Core.dll
+E:\SqlFramework\SqlEnitityFramerwork\SqlEnitityFramerwork.Core\bin\Debug\SqlEnitityFramerwork.Core.pdb
+E:\SqlFramework\SqlEnitityFramerwork\SqlEnitityFramerwork.Core\obj\Debug\SqlEnitityFramerwork.Core.dll
+E:\SqlFramework\SqlEnitityFramerwork\SqlEnitityFramerwork.Core\obj\Debug\SqlEnitityFramerwork.Core.pdb
