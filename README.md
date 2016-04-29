@@ -3,3 +3,5 @@
 
 使用方法和EntityFramework完全一样，支持使用lambed表达式来操作
 
+
+支持批量添加和批量删除
